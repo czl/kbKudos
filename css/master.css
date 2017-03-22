@@ -1,0 +1,27 @@
+html,
+body
+{
+  height: 100%;
+  text-align: center;
+}
+
+.mainBody
+{
+    height:95%;
+    background-image: linear-gradient(bottom, rgb(3,52,89) 25%, rgb(6,95,163) 63%, rgb(9,138,237) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(3,52,89) 25%, rgb(6,95,163) 63%, rgb(9,138,237) 82%);
+    background-image: -moz-linear-gradient(bottom,rgb(3,52,89) 25%, rgb(6,95,163) 63%, rgb(9,138,237) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(3,52,89) 25%, rgb(6,95,163) 63%, rgb(9,138,237) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(3,52,89) 25%, rgb(6,95,163) 63%, rgb(9,138,237) 82%);
+}
+
+.uploadDiv
+{
+  display: inline-block;
+  width: 600px;
+  height: 300px;
+  margin: 15%;
+  background-color: grey;
+  border: 3px solid black;
+  text-align: center;
+}
