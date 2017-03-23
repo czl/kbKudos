@@ -7,9 +7,10 @@
   </head>
   <body class="mainBody">
     <div class="uploadDiv">
-      <form class="formUpload" action="upload.php" method="post">
+      <form class="formUpload" action="upload.php" method="post" enctype="multipart/form-data">
         Select file to upload:
-        <input type="file" name="editorList" value="Upload File">
+        <input type="file" id="editorList" name="editorList" value="Upload File">
+        <input type="submit" name="submit">
       </form>
     </div>
   </body>
