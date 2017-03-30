@@ -10,9 +10,28 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "Track": "#5687d1",
-  "Team": "#7b615c",
-  "AE": "#de783b",
+  "ae": "#5687d1",
+  "Track 1": "#c5d156",
+  "Team 1": "#a056d1",
+  "AE 1": "#56d162",
+  "AE 2": "#c5d156",
+  "Team 2": "#5688d1",
+  "AE 3": "#c6d156",
+  "AE 4": "#d16256",
+  "Track 2": "#5687d1",
+  "Team 3": "#d15687",
+  "AE 5": "#56c5d1",
+  "AE 6": "#a056d1",
+  "Team 4": "#87d156",
+  "AE 7": "#56d163",
+  "AE 8": "#c5d157",
+  "Track 3": "#d16356",
+  "Team 5": "#6356d1",
+  "AE 9": "#56c5d2",
+  "AE 10": "#d16257",
+  "Team 6": "#56d163",
+  "AE 11": "#5688d2",
+  "AE 12": "#d16258"
 };
 
 // Total size of all segments; we set this later, after loading the data.
@@ -36,8 +55,9 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.  data/kbKudos.csv
-d3.text("http://localhost/kbKudos/data/kbKudos.csv", function(text) {
+d3.text("https://drive.google.com/file/d/0Bw8dJ03vo7w4WmI0V1JSOTQwVUE/view?usp=sharing", function(text) {
   var csv = d3.csvParseRows(text);
+  console.log(csv);
   var json = buildHierarchy(csv);
   createVisualization(json);
 });
@@ -291,5 +311,6 @@ function buildHierarchy(csv) {
       }
     }
   }
+  console.log(root.name);
   return root;
 };
