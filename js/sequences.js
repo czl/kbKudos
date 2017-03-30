@@ -55,7 +55,7 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.  data/kbKudos.csv
-d3.text("https://drive.google.com/file/d/0Bw8dJ03vo7w4WmI0V1JSOTQwVUE/view?usp=sharing", function(text) {
+d3.text("http://localhost/~georgeburrows/kbKudos/kbKudos.csv", function(text) {
   var csv = d3.csvParseRows(text);
   console.log(csv);
   var json = buildHierarchy(csv);
